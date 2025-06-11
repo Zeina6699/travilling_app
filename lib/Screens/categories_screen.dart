@@ -10,7 +10,7 @@ class CategoriesScreen extends StatelessWidget {
     return  Scaffold(
       appBar:AppBar(
         centerTitle: true,
-        title: Text('دليل سياحي'),
+        title: Text('دليل سياحي',style: TextStyle(fontFamily:'El Messiri'),),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -21,7 +21,7 @@ class CategoriesScreen extends StatelessWidget {
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
             crossAxisCount: 2),
-            children: categoriesData.map((c)=>CategoryItem(title:c.title, imgUrl:c.imageUrl)).toList()
+            children: categoriesData.map((c)=>CategoryItem(title:c.title, imgUrl:c.imageUrl,id: c.id,)).toList()
             ),
       )
 

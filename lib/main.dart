@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:travelling_app/Screens/categories_screen.dart';
+import 'package:travelling_app/Screens/category_trips_screen.dart';
 
 void main() {
   runApp(const TravellingApp());
@@ -24,24 +25,28 @@ class TravellingApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: ThemeData.light().textTheme.copyWith(
-          headlineLarge: TextStyle(
+          headlineLarge:const TextStyle(
             color: Colors.blue,
             fontSize: 24,
-            fontFamily: 'ElMessiri',
+            fontFamily: 'El Messiri',
             fontWeight: FontWeight.bold
           ),
-           headlineMedium: TextStyle(
+           headlineMedium:const TextStyle(
             color: Colors.white,
             fontSize: 26,
-            fontFamily: 'ElMessiri',
+            fontFamily: 'El Messiri',
             fontWeight: FontWeight.bold
           )
         ),
         primarySwatch: Colors.blue,
-        fontFamily: 'ElMessiri',
+        fontFamily: 'El Messiri',
         useMaterial3: false
       ),
-      home: CategoriesScreen()
+      routes: {
+        '/category':(context)=>const CategoriesScreen(),
+        '/trips':(context)=>const CategoryTripsScreen()
+      },
+    initialRoute:'/category'
     );
   }
 }
