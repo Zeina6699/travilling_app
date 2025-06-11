@@ -33,18 +33,20 @@ class TravellingApp extends StatelessWidget {
           ),
            headlineMedium:const TextStyle(
             color: Colors.white,
-            fontSize: 26,
+            fontSize: 23,
             fontFamily: 'El Messiri',
             fontWeight: FontWeight.bold
           )
         ),
         primarySwatch: Colors.blue,
         fontFamily: 'El Messiri',
+       secondaryHeaderColor: Colors.yellow
+        ,
         useMaterial3: false
       ),
       routes: {
         '/category':(context)=>const CategoriesScreen(),
-        '/trips':(context)=>const CategoryTripsScreen()
+        '/trips':(context)=> CategoryTripsScreen()
       },
     initialRoute:'/category'
     );

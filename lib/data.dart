@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:travelling_app/models/category_model.dart';
+import 'package:travelling_app/models/trip_model.dart';
 
-var categoriesData=[
+var categoriesList=[
 CategoryModel(
     id: 'c1',
     title: 'جبال',
@@ -33,10 +34,8 @@ CategoryModel(
     imageUrl:'https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2tpaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60',
   ),
 ];
-
-/*
-const Trips_data =  [
-  Trip(
+var TripsList =  [
+  TripModel(
     id: 'm1',
     categories: [
       'c1',
@@ -66,7 +65,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm2',
     categories: [
       'c1',
@@ -94,7 +93,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: false,
   ),
-  Trip(
+  TripModel(
     id: 'm3',
     categories: [
       'c1',
@@ -122,7 +121,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm4',
     categories: [
       'c2',
@@ -151,7 +150,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: false,
   ),
-  Trip(
+  TripModel(
     id: 'm5',
     categories: [
       'c2',
@@ -180,7 +179,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm6',
     categories: [
       'c2',
@@ -208,7 +207,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: false,
   ),
-  Trip(
+  TripModel(
     id: 'm7',
     categories: [
       'c3',
@@ -236,7 +235,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: false,
   ),
-  Trip(
+  TripModel(
     id: 'm8',
     categories: [
       'c3',
@@ -264,7 +263,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm9',
     categories: [
       'c3',
@@ -292,7 +291,7 @@ const Trips_data =  [
     isForFamilies: false,
     isInWinter: false,
   ),
-  Trip(
+  TripModel(
     id: 'm10',
     categories: [
       'c4',
@@ -320,7 +319,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm11',
     categories: [
       'c4',
@@ -349,7 +348,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm12',
     categories: [
       'c4',
@@ -377,7 +376,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm13',
     categories: [
       'c5',
@@ -405,7 +404,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm14',
     categories: [
       'c5',
@@ -433,7 +432,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm15',
     categories: [
       'c5',
@@ -461,7 +460,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm16',
     categories: [
       'c6',
@@ -489,7 +488,7 @@ const Trips_data =  [
     isForFamilies: true,
     isInWinter: true,
   ),
-  Trip(
+  TripModel(
     id: 'm17',
     categories: [
       'c6',
@@ -520,4 +519,3 @@ const Trips_data =  [
   ),
 ];
   
-];*/
