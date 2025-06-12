@@ -10,7 +10,7 @@ class CategoriesScreen extends StatelessWidget {
     return  Scaffold(
       appBar:AppBar(
         centerTitle: true,
-        title: Text('دليل سياحي',style: TextStyle(fontFamily:'El Messiri'),),
+        title:const Text('دليل سياحي',style: TextStyle(fontFamily:'El Messiri'),),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
