@@ -14,7 +14,7 @@ class customRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(children: [Icon(icon,color: Theme.of(context).secondaryHeaderColor,),
-    SizedBox(width: 6,),
+    const SizedBox(width: 6,),
     Text('$c')
     ],);
   }

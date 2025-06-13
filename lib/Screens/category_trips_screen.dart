@@ -19,13 +19,13 @@ TripModel? tripModel;
 
     return Scaffold(
     
-   appBar: AppBar(title: Text(categoryTitle,style: TextStyle(fontFamily:'El Messiri'),),centerTitle: true, ),
+   appBar: AppBar(title: Text(categoryTitle,style: const TextStyle(fontFamily:'El Messiri'),),centerTitle: true, ),
    body: ListView.builder(
     itemCount: filteredTrips.length,
     itemBuilder:(context,index){
-      return TripItem(duration: filteredTrips[index].duration,imgUrl: filteredTrips[index].imageUrl,season:  filteredTrips[index].season,title: filteredTrips[index].title,tripType: filteredTrips[index].tripType,);
+      return TripItem(
+        id: filteredTrips[index].id,
+        duration: filteredTrips[index].duration,imgUrl: filteredTrips[index].imageUrl,season:  filteredTrips[index].season,title: filteredTrips[index].title,tripType: filteredTrips[index].tripType,);
     },
-    ),
-    );
-  }
-}
+    ));
+  }}

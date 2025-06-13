@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:travelling_app/Screens/categories_screen.dart';
 import 'package:travelling_app/Screens/category_trips_screen.dart';
+import 'package:travelling_app/Screens/favorites_screen.dart';
+import 'package:travelling_app/Screens/tabs_screen.dart';
+import 'package:travelling_app/Screens/trip_details_screen.dart';
 
 void main() {
   runApp(const TravellingApp());
@@ -46,9 +49,12 @@ class TravellingApp extends StatelessWidget {
       ),
       routes: {
         '/category':(context)=>const CategoriesScreen(),
-        '/trips':(context)=> CategoryTripsScreen()
+        '/trips':(context)=> CategoryTripsScreen(),
+        '/details':(context)=>const TripDetailsScreen(),
+        '/fav':(context)=>const  FavoritesScreen(),
+        '/tabs':(context)=>const  TabsScreen()
       },
-    initialRoute:'/category'
+    initialRoute:'/tabs'
     );
   }
 }

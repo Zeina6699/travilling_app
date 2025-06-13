@@ -3,7 +3,8 @@ import 'package:travelling_app/models/trip_model.dart';
 import 'package:travelling_app/widgets/custom_row.dart';
 
 class TripItem extends StatelessWidget {
-  const TripItem({super.key, required this.title, required this.imgUrl, required this.tripType, required this.duration, required this.season});
+  const TripItem({super.key, required this.title, required this.imgUrl, required this.tripType, required this.duration, required this.season, required this.id});
+ final String id;
   final String title;
   final String imgUrl;
   final TripType tripType;
@@ -14,7 +15,14 @@ class TripItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: (){Navigator.pushNamed(context, '/details',arguments: id);},
      child: Card(
+      elevation: 7,
+      margin: const EdgeInsets.all(10),
+      shape:RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
+        
+      ),
       child: Column(
         children: [
           Stack(children: [
@@ -61,12 +69,6 @@ class TripItem extends StatelessWidget {
             ),
           )
         ],
-      ),
-      elevation: 7,
-      margin: EdgeInsets.all(10),
-      shape:RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-        
       ),
      ), 
     );

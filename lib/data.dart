@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:travelling_app/models/category_model.dart';
 import 'package:travelling_app/models/trip_model.dart';
 
